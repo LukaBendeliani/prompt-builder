@@ -1,0 +1,22 @@
+{
+  "name": "ui-prompt-atelier",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Gemini-powered prompt builder for UI-building agents built with Next.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@google/genai": "^1.40.0",
+    "next": "14.2.32",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.14",
+    "typescript": "5.9.3"
+  }
+}
