@@ -137,12 +137,7 @@ async function generateWithGemini(input: PromptInput, apiKey: string): Promise<s
   const ai = new GoogleGenAI({ apiKey });
   const response = await ai.models.generateContent({
     model: GEMINI_MODEL,
-    contents: prompt,
-    config: {
-      temperature: 0.62,
-      topP: 0.9,
-      maxOutputTokens: 1500
-    }
+    contents: prompt
   });
 
   const text = (response.text || "").trim();
